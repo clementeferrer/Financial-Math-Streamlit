@@ -1,11 +1,6 @@
 ################################################################### Libraries
 # Streamlit
 import streamlit as st
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-local_css("style.css")
 
 # Tratamiento de datos
 import pandas as pd
@@ -23,6 +18,12 @@ import datetime as dt
 ###################################################################
 
 st.set_page_config(page_title="Financial Time Series", page_icon="📈")
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style.css")
 
 st.markdown("# Financial time Series: GARCH Model")
 
