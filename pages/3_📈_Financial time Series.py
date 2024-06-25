@@ -22,9 +22,9 @@ import datetime as dt
 
 ###################################################################
 
-st.set_page_config(page_title="Financial time Series", page_icon="🤌")
+st.set_page_config(page_title="Financial Time Series", page_icon="📈")
 
-st.markdown("# Financial time Series: GARCH model 🤌")
+st.markdown("# Financial time Series: GARCH Model")
 
 st.markdown('''
             <div style="text-align: justify;">
