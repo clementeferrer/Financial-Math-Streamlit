@@ -1,9 +1,4 @@
 import streamlit as st
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
-local_css("style.css")
 
 import numpy as np
 import pandas as pd
@@ -17,6 +12,12 @@ from scipy.stats import expon, probplot
 from scipy.stats import norm, multivariate_normal
 
 st.set_page_config(page_title="Properties of Financial Data", page_icon="📈")
+
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+local_css("style.css")
 
 st.markdown("# Properties of Financial Data")
 
