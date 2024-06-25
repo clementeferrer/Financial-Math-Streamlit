@@ -338,9 +338,10 @@ st.markdown(f'''
 
 st.header('Monte Carlo Method')
 
+n_simulation = st.number_input("Number of simulations:", min_value=50, max_value=1000, value=100, step=50)
 
 
-n_simulation = 50 # number of simulations
+# n_simulation = 50  number of simulations
 T = 252 # number of trading days in a year
 weights = np.full((4), 0.25)
 meanM = np.full(shape=(T, len(weights)), fill_value=mean_returns).T
